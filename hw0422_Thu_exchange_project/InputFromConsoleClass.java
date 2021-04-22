@@ -1,4 +1,4 @@
-package hw0422_Thu_ch;
+package hw0422_Thu_exchange_project;
 
 import java.util.Scanner;
 
@@ -11,16 +11,12 @@ public class InputFromConsoleClass {
 		scan.close();
 	}
 	
-	public double inputWon() {
-		double won;
+	public void inputWon(ExchangeType et) {
 		System.out.print("받은 원화 입력 : ");
-		won = scan.nextDouble();
-		return won;
+		et.won = scan.nextDouble();
 	}
-	public int inputType() {
-		int type;
+	public void inputType(ExchangeType et) {
 		System.out.println("환전할 종류 선택(0 : Close, 1 : USD, 2 : EUR, 3 : JPY)?");
-		type = scan.nextInt();
-		return type;
+		et.type = scan.nextInt();
 	}
 }	

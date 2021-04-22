@@ -1,13 +1,13 @@
-package hw0422_Thu_ch;
+package hw0422_Thu_exchange_project;
 
 public class ProcessingClass {
-	public static double exchangeResult;	//외화 환전 결과
-	public static double changeWon;		//거스름돈 소수점 포함
-	public static int changeWonResult;	//거스름돈 소수점 제외
+	double exchangeResult;		//외화 환전 결과
+	double changeWon;			//거스름돈 소수점 포함
+	int changeWonResult;		//거스름돈 소수점 제외
 	
 	PrintClass PrintClass = new PrintClass();
 	
-	public void exchangeUSD(double won) {
+	public int exchangeUSD(double won) {
 		int usd; 			//달러 
 		int usd100, usd50, usd20, usd10, usd5, usd2, usd1; //달러단위
 		int usdCurrent;
@@ -34,13 +34,13 @@ public class ProcessingClass {
 		usdCurrent -= 2 * usd2;
 		usd1 = usdCurrent/1;		//1달러 화폐 개수
 		usdCurrent -= 1 * usd1;
-		CostValueClass.data.append(usd + ",");
 		PrintClass.printUsd(usd, usd100, usd50, usd20, usd10, usd5, usd2, usd1);
+		return usd;
 	}
 	
 	
 	
-	public void exchangeEURO(double won) {
+	public int exchangeEURO(double won) {
 		int euro; 
 		int euro500, euro200, euro100, euro50, euro20, euro10, euro5; //유로단위 
 		int euroCurrent;
@@ -68,13 +68,13 @@ public class ProcessingClass {
 		euro5 = euroCurrent / 5;		//5유로 개수
 		euroCurrent -= 5 * euro5;
 		
-		CostValueClass.data.append(euro + ",");
 		PrintClass.printEuro(euro, euro500, euro200, euro100, euro50, euro20, euro10, euro5);
+		return euro;
 	}
 	
 	
 	
-	public void exchangeJPY(double won) {
+	public int exchangeJPY(double won) {
 		int jpy;
 		int jpy10000, jpy5000, jpy2000, jpy1000;
 		int jpyCurrent;
@@ -96,16 +96,15 @@ public class ProcessingClass {
 		jpy1000 = jpyCurrent / 1000;		//1000엔 개수
 		jpyCurrent -= 1000 * jpy1000;
 		
-		CostValueClass.data.append(jpy + ",");
 		PrintClass.printJpy(jpy, jpy10000, jpy5000, jpy2000, jpy1000);
+		return jpy;
 	}
 	
 	
 	
-	public void resultWon() { 	//원화 거스름돈 계산
+	public int resultWon() { 	//원화 거스름돈 계산
 		int won5000, won1000, won500, won100, won50, won10; //원화 단위
 		int wonCurrent;
-		
 		
 		wonCurrent = changeWonResult;
 		won5000 = wonCurrent/5000;		//5000원 개수
@@ -119,7 +118,7 @@ public class ProcessingClass {
 		won50 = wonCurrent/50;			//50원 개수
 		wonCurrent -= 50 * won50;	
 		won10 = wonCurrent/10;			//10원 개수
-		CostValueClass.data.append(changeWonResult + ",");
 		PrintClass.printWon(changeWonResult, won5000, won1000, won500, won100, won50, won10);
+		return wonCurrent;
 	}
 }

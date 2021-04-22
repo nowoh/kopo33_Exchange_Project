@@ -1,4 +1,4 @@
-package hw0422_Thu_ch;
+package hw0422_Thu_exchange_project;
 
 public class CostValueClass {
 	final static int EX_TYPE_EXIT = 0;
@@ -8,5 +8,4 @@ public class CostValueClass {
 	final static double EX_RATE_USD = 1127.6;
 	final static double EX_RATE_EURO = 1327.65;
 	final static double EX_RATE_JPY = 10.20;
-	static StringBuffer data = new StringBuffer();
 }

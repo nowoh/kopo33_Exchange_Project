@@ -1,4 +1,4 @@
-package hw0422_Thu_ch;
+package hw0422_Thu_exchange_project;
 
 public class PrintClass {
 	
