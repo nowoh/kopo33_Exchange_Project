@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class InputFromConsoleClass {
 	Scanner scan = null;
-	InputFromConsoleClass() {	//持失切
+	InputFromConsoleClass() {				//持失切
 		scan = new Scanner(System.in);
 	}
-	protected void fianlize() {		//社瑚切
+	protected void fianlize() {				//社瑚切
 		scan.close();
 	}
 	
