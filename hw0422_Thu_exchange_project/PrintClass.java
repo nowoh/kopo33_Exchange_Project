@@ -14,6 +14,7 @@ public class PrintClass {
 		System.out.print("5달러 : " + usd5 +"장\t");
 		System.out.print("2달러 : " + usd2 +"장\t");
 		System.out.println("1달러 : " + usd1 +"장\n");
+		
 	}
 	
 	public void printEuro(int euro, int euro500, int euro200, 

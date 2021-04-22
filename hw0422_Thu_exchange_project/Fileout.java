@@ -10,14 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Fileout {
-	
-	
-//	BufferedReader fr;
-//	
-//	Fileout() throws FileNotFoundException {
-//		fr = new BufferedReader(new FileReader("C:\\Users\\Howon\\Desktop\\howon\\CR.csv"));
-//	}
-	
+
 	public void convertWrite(ExchangeType et) throws IOException {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();

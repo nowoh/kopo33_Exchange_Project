@@ -8,4 +8,5 @@ public class CostValueClass {
 	final static double EX_RATE_USD = 1127.6;
 	final static double EX_RATE_EURO = 1327.65;
 	final static double EX_RATE_JPY = 10.20;
+//	final static int[] USD_ARRAY = {100, 50, 20, 10, 5, 1};
 }

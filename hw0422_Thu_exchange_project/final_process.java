@@ -19,17 +19,14 @@ public class final_process {
 			if (et.type == CostValueClass.EX_TYPE_USD) {
 				et.chResult = pc.exchangeUSD(et.won);
 				et.chWon = pc.resultWon();
-				et.exType = "USD";
 				
 			} else if (et.type == CostValueClass.EX_TYPE_EURO) {
 				et.chResult = pc.exchangeEURO(et.won);
 				et.chWon = pc.resultWon();
-				et.exType = "EURO";
 				
 			} else if (et.type == CostValueClass.EX_TYPE_JPY) {
 				et.chResult = pc.exchangeJPY(et.won);
 				et.chWon = pc.resultWon();
-				et.exType = "JPY";
 				
 			} else if (et.type == CostValueClass.EX_TYPE_EXIT) {
 				break;
@@ -40,6 +37,5 @@ public class final_process {
 			fo.convertWrite(et);
 			
 		} while (et.type != CostValueClass.EX_TYPE_EXIT);
-	
 	}
 }

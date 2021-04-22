@@ -18,5 +18,15 @@ public class InputFromConsoleClass {
 	public void inputType(ExchangeType et) {
 		System.out.println("환전할 종류 선택(0 : Close, 1 : USD, 2 : EUR, 3 : JPY)?");
 		et.type = scan.nextInt();
+		
+		if (et.type == CostValueClass.EX_TYPE_USD) {
+			et.exType = "USD";
+			
+		} else if (et.type == CostValueClass.EX_TYPE_EURO) {
+			et.exType = "EURO";
+			
+		} else if (et.type == CostValueClass.EX_TYPE_JPY) {
+			et.exType = "JPY";
+		}
 	}
 }	
