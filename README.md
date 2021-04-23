@@ -1,13 +1,11 @@
  # Exchange_Project
  - ## Writer : 이호원 (kopo33)
  - ## Start date : 2021년 4월 22일
-***
+---
  - ### main_kyd_MoneyConverter.java
-	`final_process class를 실행시켜주는 main class`
+`final_process class를 실행시켜주는 main class`
  - ### final_process.java
-
-	ExchangeType, ProcessingClass, InputFromConsoleClass, Fileout 클래스를 불러와서  
-	최종적으로 모든 과정을 처리해주고 파일을 생성 또는 덧붙여 쓰는 클래스
+`ExchangeType, ProcessingClass, InputFromConsoleClass, Fileout 클래스를 불러와서 최종적으로 모든 과정을 처리해주고 파일을 생성 또는 덧붙여 쓰는 클래스`
 
  - ### InputFromConsoleClass.java
 
