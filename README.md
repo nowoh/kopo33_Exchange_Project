@@ -8,7 +8,7 @@
 
  - final_process.java
 
-	ExchangeType, ProcessingClass, InputFromConsoleClass, Fileout 클래스를 불러와서
+	ExchangeType, ProcessingClass, InputFromConsoleClass, Fileout 클래스를 불러와서  
 	최종적으로 모든 과정을 처리해주고 파일을 생성 또는 덧붙여 쓰는 클래스
 
  - InputFromConsoleClass.java
