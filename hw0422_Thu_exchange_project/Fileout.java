@@ -15,8 +15,8 @@ public class Fileout {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		
-		FileWriter fw = new FileWriter("C:\\Users\\Howon\\Desktop\\howon\\CR.csv", true);
-		BufferedReader fr = new BufferedReader(new FileReader("C:\\Users\\Howon\\Desktop\\howon\\CR.csv"));
+		FileWriter fw = new FileWriter(CostValueClass.save_route, true);
+		BufferedReader fr = new BufferedReader(new FileReader(CostValueClass.save_route));
 		
 		String line;
 		if ((line = fr.readLine()) == null) {
