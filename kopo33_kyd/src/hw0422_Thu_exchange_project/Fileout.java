@@ -15,8 +15,8 @@ public class Fileout {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		Date date = new Date();
 		
-		FileWriter fw = new FileWriter(CostValueClass.save_route, true);
-		BufferedReader fr = new BufferedReader(new FileReader(CostValueClass.save_route));
+		FileWriter fw = new FileWriter(CostValueClass.SAVE_ROUTE, true);
+		BufferedReader fr = new BufferedReader(new FileReader(CostValueClass.SAVE_ROUTE));
 		
 		String line;
 		if ((line = fr.readLine()) == null) {
